@@ -41,6 +41,62 @@
       "queryLines": [
         "SELECT * FROM movie.movie_gold.movie_review_rating_rotten_tomatoes"
       ]
+    },
+    {
+      "name": "895991df",
+      "displayName": "movie_review_rating_netflix",
+      "queryLines": [
+        "SELECT * FROM movie.movie_gold.movie_review_rating_netflix"
+      ]
+    },
+    {
+      "name": "4e8be543",
+      "displayName": "movie_review_rating_amazon_prime",
+      "queryLines": [
+        "SELECT * FROM movie.movie_gold.movie_review_rating_amazon_prime"
+      ]
+    },
+    {
+      "name": "3ea2be7f",
+      "displayName": "movie_genre_distribution_netflix",
+      "queryLines": [
+        "SELECT * FROM movie.movie_gold.movie_genre_distribution_netflix"
+      ]
+    },
+    {
+      "name": "90c65f35",
+      "displayName": "movie_genre_distribution_amazon_prime",
+      "queryLines": [
+        "SELECT* FROM movie.movie_gold.movie_genre_distribution_amazon_prime"
+      ]
+    },
+    {
+      "name": "a069181f",
+      "displayName": "movie_release_distribution_netflix",
+      "queryLines": [
+        "SELECT * FROM movie.movie_gold.movie_release_year_frequency_netflix"
+      ]
+    },
+    {
+      "name": "ff74f357",
+      "displayName": "movie_release_distribution_amazon_prime",
+      "queryLines": [
+        "SELECT * FROM movie.movie_gold.movie_release_year_frequency_amazon_prime"
+      ]
+    },
+    {
+      "name": "daa250ec",
+      "displayName": "movie_genre_wise_rating_netflix",
+      "queryLines": [
+        "SELECT * FROM movie.movie_gold.movie_genre_rating_netflix"
+      ]
+    },
+    {
+      "name": "212c7ada",
+      "displayName": "movie_genre_wise_rating_amazon_prime",
+      "queryLines": [
+        "SELECT * FROM movie.movie_gold.movie_genre_rating_amazon_prime"
+      ]
     }
   ],
   "pages": [
@@ -764,7 +820,7 @@
           },
           "position": {
             "x": 0,
-            "y": 3,
+            "y": 6,
             "width": 6,
             "height": 6
           }
@@ -862,9 +918,977 @@
           },
           "position": {
             "x": 0,
-            "y": 9,
+            "y": 12,
             "width": 6,
             "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "ecd38c2c",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "895991df",
+                  "fields": [
+                    {
+                      "name": "avg(IMDb_rating)",
+                      "expression": "AVG(`IMDb_rating`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(IMDb_rating)"
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Average IMDb Rating Netflix"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 3,
+            "width": 1,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "b1a1ad3e",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "895991df",
+                  "fields": [
+                    {
+                      "name": "avg(Rotten_Tomatoes_rating)",
+                      "expression": "AVG(`Rotten_Tomatoes_rating`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(Rotten_Tomatoes_rating)"
+                }
+              },
+              "frame": {
+                "title": "Average Rotten Tomatoes Rating Netflix",
+                "showTitle": true
+              }
+            }
+          },
+          "position": {
+            "x": 1,
+            "y": 3,
+            "width": 2,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "17695308",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "4e8be543",
+                  "fields": [
+                    {
+                      "name": "avg(IMDb_rating)",
+                      "expression": "AVG(`IMDb_rating`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(IMDb_rating)"
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Average IMDb Rating Amazon Prime Video"
+              }
+            }
+          },
+          "position": {
+            "x": 5,
+            "y": 3,
+            "width": 1,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "74244966",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "4e8be543",
+                  "fields": [
+                    {
+                      "name": "avg(Rotten_Tomatoes_rating)",
+                      "expression": "AVG(`Rotten_Tomatoes_rating`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(Rotten_Tomatoes_rating)"
+                }
+              },
+              "frame": {
+                "title": "Average Rotten Tomatoes Rating Amazon Prime Video",
+                "showTitle": true
+              }
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 3,
+            "width": 2,
+            "height": 3
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS"
+    },
+    {
+      "name": "43a04c71",
+      "displayName": "Netflix Analysis",
+      "layout": [
+        {
+          "widget": {
+            "name": "eb2d929d",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "3ea2be7f",
+                  "fields": [
+                    {
+                      "name": "genre_name",
+                      "expression": "`genre_name`"
+                    },
+                    {
+                      "name": "sum(genre_count)",
+                      "expression": "SUM(`genre_count`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "genre_name",
+                  "displayName": "Genre",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(genre_count)",
+                  "displayName": "Number of Movies",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              },
+              "frame": {
+                "title": "Genre Distribution",
+                "showTitle": true
+              },
+              "mark": {
+                "colors": [
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 2
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 3
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 4
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 7
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 8
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 9
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 10
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "1d34fc39",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "a069181f",
+                  "fields": [
+                    {
+                      "name": "release_year",
+                      "expression": "`release_year`"
+                    },
+                    {
+                      "name": "sum(count)",
+                      "expression": "SUM(`count`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "release_year",
+                  "displayName": "Year",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(count)",
+                  "displayName": "Number of movies",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              },
+              "frame": {
+                "title": "Movie Release Distribution on Netflix",
+                "showTitle": true
+              },
+              "mark": {
+                "colors": [
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 2
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 3
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 4
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 7
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 8
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 9
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 10
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 6,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "ec174dda",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "daa250ec",
+                  "fields": [
+                    {
+                      "name": "Genre",
+                      "expression": "`Genre`"
+                    },
+                    {
+                      "name": "avg_IMDb_rating",
+                      "expression": "`avg_IMDb_rating`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "Genre",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "avg_IMDb_rating",
+                  "displayName": "Average IMDb Rating",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              },
+              "frame": {
+                "title": "Average IMDb Rating by Genre",
+                "showTitle": true
+              },
+              "mark": {
+                "colors": [
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 2
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 3
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 4
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 7
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 8
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 9
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 10
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 12,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "4fb9c5ab",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "daa250ec",
+                  "fields": [
+                    {
+                      "name": "Genre",
+                      "expression": "`Genre`"
+                    },
+                    {
+                      "name": "avg_Rotten_Tomatoes_rating",
+                      "expression": "`avg_Rotten_Tomatoes_rating`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "Genre",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "avg_Rotten_Tomatoes_rating",
+                  "displayName": "Average Rotten Tomatoes Rating Rating",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              },
+              "frame": {
+                "title": "Average Rotten Tomatoes Rating by Genre",
+                "showTitle": true
+              },
+              "mark": {
+                "colors": [
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 2
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 3
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 4
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 7
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 8
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 9
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 10
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 18,
+            "width": 6,
+            "height": 8
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS"
+    },
+    {
+      "name": "7940bdd0",
+      "displayName": "Amazon Prime Video Analysis",
+      "layout": [
+        {
+          "widget": {
+            "name": "63dad16e",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "90c65f35",
+                  "fields": [
+                    {
+                      "name": "genre_name",
+                      "expression": "`genre_name`"
+                    },
+                    {
+                      "name": "sum(genre_count)",
+                      "expression": "SUM(`genre_count`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "genre_name",
+                  "displayName": "Genre",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(genre_count)",
+                  "displayName": "Number of Movies",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              },
+              "frame": {
+                "title": "Genre Distribution",
+                "showTitle": true
+              },
+              "mark": {
+                "colors": [
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 2
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 3
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 4
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 7
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 8
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 9
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 10
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "f09e01b3",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ff74f357",
+                  "fields": [
+                    {
+                      "name": "release_year",
+                      "expression": "`release_year`"
+                    },
+                    {
+                      "name": "sum(count)",
+                      "expression": "SUM(`count`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "release_year",
+                  "displayName": "Year",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(count)",
+                  "displayName": "Number of movies",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              },
+              "frame": {
+                "title": "Movie Release Distribution on Netflix",
+                "showTitle": true
+              },
+              "mark": {
+                "colors": [
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 2
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 3
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 4
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 7
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 8
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 9
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 10
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 6,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "f1ceec25",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "212c7ada",
+                  "fields": [
+                    {
+                      "name": "Genre",
+                      "expression": "`Genre`"
+                    },
+                    {
+                      "name": "avg_IMDb_rating",
+                      "expression": "`avg_IMDb_rating`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "Genre",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "avg_IMDb_rating",
+                  "displayName": "Average IMDb Rating",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              },
+              "frame": {
+                "title": "Average IMDb Rating by Genre",
+                "showTitle": true
+              },
+              "mark": {
+                "colors": [
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 2
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 3
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 4
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 7
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 8
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 9
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 10
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 12,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "0cd87633",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "212c7ada",
+                  "fields": [
+                    {
+                      "name": "Genre",
+                      "expression": "`Genre`"
+                    },
+                    {
+                      "name": "avg_Rotten_Tomatoes_rating",
+                      "expression": "`avg_Rotten_Tomatoes_rating`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "Genre",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "avg_Rotten_Tomatoes_rating",
+                  "displayName": "Average Rotten Tomatoes Rating Rating",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              },
+              "frame": {
+                "title": "Average Rotten Tomatoes Rating by Genre",
+                "showTitle": true
+              },
+              "mark": {
+                "colors": [
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 2
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 3
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 4
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 7
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 8
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 9
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 10
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 18,
+            "width": 6,
+            "height": 8
           }
         }
       ],
