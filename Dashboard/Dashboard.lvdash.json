@@ -545,14 +545,14 @@
                 }
               },
               "frame": {
-                "title": "Average IMDb Rating",
+                "title": "Average IMDb Rating Netflix",
                 "showTitle": true
               }
             }
           },
           "position": {
             "x": 0,
-            "y": 0,
+            "y": 3,
             "width": 1,
             "height": 3
           }
@@ -596,7 +596,7 @@
             }
           },
           "position": {
-            "x": 1,
+            "x": 4,
             "y": 0,
             "width": 1,
             "height": 3
@@ -694,7 +694,7 @@
             }
           },
           "position": {
-            "x": 3,
+            "x": 5,
             "y": 0,
             "width": 1,
             "height": 3
@@ -739,7 +739,7 @@
             }
           },
           "position": {
-            "x": 4,
+            "x": 0,
             "y": 0,
             "width": 1,
             "height": 3
@@ -784,7 +784,7 @@
             }
           },
           "position": {
-            "x": 5,
+            "x": 3,
             "y": 0,
             "width": 1,
             "height": 3
@@ -1019,8 +1019,8 @@
             }
           },
           "position": {
-            "x": 0,
-            "y": 3,
+            "x": 1,
+            "y": 0,
             "width": 1,
             "height": 3
           }
@@ -1058,7 +1058,7 @@
             }
           },
           "position": {
-            "x": 1,
+            "x": 2,
             "y": 3,
             "width": 2,
             "height": 3
@@ -1097,7 +1097,7 @@
             }
           },
           "position": {
-            "x": 5,
+            "x": 1,
             "y": 3,
             "width": 1,
             "height": 3
@@ -1136,7 +1136,7 @@
             }
           },
           "position": {
-            "x": 3,
+            "x": 4,
             "y": 3,
             "width": 2,
             "height": 3
@@ -2185,7 +2185,7 @@
                 },
                 "y": {
                   "fieldName": "avg_IMDb_rating",
-                  "displayName": "Average IMDb Rating",
+                  "displayName": "Average Rotten Tomatoes Rating",
                   "scale": {
                     "type": "quantitative"
                   }
