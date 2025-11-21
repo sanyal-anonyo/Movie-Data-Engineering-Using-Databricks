@@ -3,11 +3,12 @@
 ## Source File Analysis
 
 The source file to our project is a csv file containing rating and reviews of various movies.<br>
-Path: Documentation/Popular Movies TV shows from Prime Videos Netflix version_3.csv<br>
-**_Please note that in the code we have placed it in the Bronze Volumes movie.movie_bronze.dataset-movies to fetch the data._ <br>
+**Dataset URL:** https://www.kaggle.com/datasets/jyotmakadiya/popular-movies-and-tv-shows-amazon-prime-netflix <br>
+**Path in project:** Documentation/Popular Movies TV shows from Prime Videos Netflix version_3.csv<br>
+***** _Please note that in the code we have placed it in the Bronze Volumes movie.movie_bronze.dataset-movies to fetch the data._ ***** <br>
 
 It contains the following fields:-
-<table>
+<table>[](url)
 <tr><th>Field</th><th> Description</th>
 <tr><td>[Blank]</td><td>No definition for this field. Only obeservation is this field holds ID - 1 value</td></tr>
 <tr><td>ID</td><td>Movie Id with values like 1,2,3,4...</td></tr>
