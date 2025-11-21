@@ -25,9 +25,9 @@ Following is a complete list of all project deliverables:
 <table>
 <tr><th>DELIVERABLE</th>	<th>DESCRIPTION</th></tr>
 <tr><td>Bronze Layer Delta Table</td><td>	Ingest raw CSV file containing movie reviews and ratings into a Delta table, preserving original data.</td></tr>
-<tr><td>Silver Layer Transformation	Clean </td><td>and standardize data from Bronze layer, ensuring quality and consistency for analytics.</td></tr>
-<tr><td>Gold Layer Views	Create </td><td>curated and aggregated views from Silver layer for reporting and visualization.</td></tr>
-<tr><td>Databricks Dashboard	Develop </td><td>interactive dashboards using Gold layer views to visualize insights on movie ratings.</td></tr>
+<tr><td>Silver Layer Transformation	</td><td>Clean and standardize data from Bronze layer, ensuring quality and consistency for analytics.</td></tr>
+<tr><td>Gold Layer Views</td><td>	Create curated and aggregated views from Silver layer for reporting and visualization.</td></tr>
+<tr><td>Databricks Dashboard </td><td>	Develop interactive dashboards using Gold layer views to visualize insights on movie ratings.</td></tr>
 <tr><td>Job Pipeline Automation	</td><td>Design and configure a Databricks Job Pipeline to automate ingestion, transformation, and dashboard updates.</td></tr>
 </table>
 
