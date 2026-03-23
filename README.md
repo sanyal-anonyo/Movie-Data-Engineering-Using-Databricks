@@ -27,4 +27,4 @@ Following is a complete list of all project deliverables:
 
 ![](Documentation/Architecture)
 
-**Solution and Approach:-** ![]Documentation/Approach and Solution.md
+**Solution and Approach:-** (https://github.com/sanyal-anonyo/Movie-Data-Engineering-Using-Databricks/blob/master/Documentation/Approach%20and%20Solution.md)
