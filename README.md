@@ -27,4 +27,4 @@ Following is a complete list of all project deliverables:
 
 ![](Documentation/Architecture)
 
-**Solution and Approach:-** Documentation/Approach and Solution.md
+**Solution and Approach:-** ![]Documentation/Approach and Solution.md
